@@ -174,7 +174,7 @@ for k in data['nodes']:
     
     columns = []
     for kk in data['nodes'][k]['columns']:
-        columns.append(Column(name=data['nodes'][k]['columns'][kk]['name'], dataType=DataType.STRING))
+        columns.append(Column(name=data['nodes'][k]['columns'][kk]['name'], description=data['nodes'][k]['columns'][kk]['description'],dataType=DataType.STRING))
     
     print('create table: ', table_name)
     create_table = CreateTableRequest(
