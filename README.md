@@ -1,3 +1,7 @@
+# Config VM
+1. 安装docker：https://docs.docker.com/engine/install/ubuntu/
+1. 处理后续扫尾工作，比如docker的sudo权限问题， https://docs.docker.com/engine/install/linux-postinstall/
+1. 安装docker compose， docs.open-metadata.org/deployment/docker#install-docker-compose-version-2-on-linux 
 # Install OpenMetaData using Docker
 1. 创建数据存放路径, `mkdir -p $PWD/docker-volume/db-data`
 1. 创建镜像,`docker compose up --build -d`
